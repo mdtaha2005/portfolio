@@ -1,0 +1,120 @@
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .skl{
+            text-decoration: none;
+            color: rgb(255, 183, 77);
+            padding: 0.5rem 1rem;
+            border-radius: 2px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        body {
+            background-color: rgb(11, 11, 29);
+            color: aliceblue;
+            font-family: Arial, sans-serif;
+        }
+
+        .he {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1rem;
+            background-color:rgb(50, 50, 80) ;
+            flex-wrap: wrap;
+            /* Ensure wrapping if necessary */
+        }
+
+        .left {
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgb(255, 240, 200);
+        
+        }
+
+        .right ul {
+            display: flex;
+            gap: 1rem;
+            /* Adds space between items */
+            justify-content: center;
+            flex-wrap: nowrap;
+            /* Prevents wrapping of links */
+        }
+
+        .right ul li {
+            list-style: none;
+        }
+
+        .right ul li a {
+            text-decoration: none;
+            color: rgb(255, 183, 77);
+            padding: 0.5rem 1rem;
+            border-radius: 2px;
+            transition: background-color 0.3s ease;
+        }
+
+        .right ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .he {
+                flex-direction: row;
+                /* Stack header elements vertically */
+                align-items: center;
+            }
+
+            .right ul {
+                justify-content: center;
+                /* Center-align links on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .left {
+                font-size: 1.5rem;
+                /* Reduce title size */
+            }
+
+            .right ul li a {
+                padding: 0.5rem;
+                /* Adjust padding for smaller screens */
+            }
+        }
+        
+        .footer {
+            background-color: rgb(30, 30, 52);
+            color: aliceblue;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-container p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: rgb(126, 217, 217);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: aliceblue;
+        }

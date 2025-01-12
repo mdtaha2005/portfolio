@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(30, 30, 52);
+            color: aliceblue;
+            font-family: Arial, sans-serif;
+        }
+
+        .he {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1rem;
+            background-color:rgb(50, 50, 80) ;
+            flex-wrap: wrap;
+            /* Ensure wrapping if necessary */
+        }
+
+        .left {
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgb(255, 240, 200);
+        
+        }
+
+        .right ul {
+            display: flex;
+            gap: 1rem;
+            /* Adds space between items */
+            justify-content: center;
+            flex-wrap: nowrap;
+            /* Prevents wrapping of links */
+        }
+
+        .right ul li {
+            list-style: none;
+        }
+
+        .right ul li a {
+            text-decoration: none;
+            color: rgb(255, 183, 77);
+            padding: 0.5rem 1rem;
+            border-radius: 2px;
+            transition: background-color 0.3s ease;
+        }
+
+        .right ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .he {
+                flex-direction: row;
+                /* Stack header elements vertically */
+                align-items: center;
+            }
+
+            .right ul {
+                justify-content: center;
+                /* Center-align links on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .left {
+                font-size: 1.5rem;
+                /* Reduce title size */
+            }
+
+            .right ul li a {
+                padding: 0.5rem;
+                /* Adjust padding for smaller screens */
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(30, 30, 52);
+            color: aliceblue;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #welcome {
+            font-size: 2rem;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 32px auto;
+            flex-wrap: wrap;
+            /* Allows wrapping on smaller screens */
+        }
+
+        .leftsection {
+            flex: 1;
+            /* Takes available space */
+            margin-left: 5%;
+            text-align: left;
+        }
+
+        .leftsection h4 {
+            font-size: 1.5rem;
+        }
+
+        .leftsection h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+            color: rgb(126, 217, 217);
+        }
+
+        .leftsection h2 {
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+
+        #element {
+            font-size: 1.8rem;
+            color: rgb(126, 217, 217);
+            font-weight: 700;
+        }
+
+        .rightsection {
+            flex: 1;
+            /* Takes available space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mypic {
+            height: 250px;
+            max-width: 100%;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .firstsection {
+                flex-direction: column;
+                /* Stacks content vertically */
+                text-align: center;
+            }
+
+            .leftsection {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .leftsection h1 {
+                font-size: 2.5rem;
+            }
+
+            .leftsection h4,
+            .leftsection h2 {
+                font-size: 1.5rem;
+            }
+
+            #mypic {
+                margin: 20px 0;
+                height: 200px;
+                /* Adjusted size for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            #welcome {
+                font-size: 1.5rem;
+            }
+
+            .leftsection h1 {
+                font-size: 2rem;
+            }
+
+            .leftsection h4,
+            .leftsection h2 {
+                font-size: 1.2rem;
+            }
+
+            #mypic {
+                height: 150px;
+                /* Further adjusted for very small screens */
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(11, 11, 29);
+            color: aliceblue;
+            line-height: 1.6;
+        }
+
+        .secondsection {
+            max-width: 80%;
+            margin: 5% auto;
+            padding: 0;
+            /* Removed box styling */
+        }
+
+        .about-container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .about-container h1 {
+            font-size: 3rem;
+            /* Increased font size for prominence */
+            color: rgb(126, 217, 217);
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            width: 80px;
+            height: 2px;
+            background-color: white;
+            margin: 10px auto 30px auto;
+            /* Added extra space below divider */
+        }
+
+        .txt {
+            font-size: 1.2rem;
+            /* Adjusted font size for better readability */
+            margin: 20px auto;
+            color: #d3d3d3;
+            text-align: justify;
+            line-height: 1.8;
+            max-width: 700px;
+            /* Constrain paragraph width for better readability */
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .secondsection {
+                max-width: 90%;
+            }
+
+            .about-container h1 {
+                font-size: 2.5rem;
+            }
+
+            .txt {
+                font-size: 1rem;
+            }
+
+            .divider {
+                width: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .secondsection {
+                max-width: 95%;
+            }
+
+            .about-container h1 {
+                font-size: 2rem;
+            }
+
+            .txt {
+                font-size: 0.9rem;
+            }
+
+            .divider {
+                width: 50px;
+            }
+        }
+
+        .footer {
+            background-color: rgb(30, 30, 52);
+            color: aliceblue;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-container p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: rgb(126, 217, 217);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: aliceblue;
+        }
+    </style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="he">
+            <div class="left">Taha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href=".//pages/skills.html">Skills</a></li>
+                    <li><a href=".//pages/projects.html">Projects</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+<main>
+    <h1 id="welcome" style="text-decoration-line: underline;">Welcome to my portfolio site</h1>
+    <section class="firstsection">
+        <div class="rightsection"><img id="mypic" src="./assets/a1.png"></div>
+        <div class="leftsection">
+            <h4>Hello Guys, My name is</h4>
+            <h1>Mohammed Taha</h1>
+            <h2>And I am a</h2>
+            <span id="element"></span>
+        </div>
+        </div>
+    </section>
+    <section class="secondsection">
+        <div class="about-container">
+            <h1>About Me</h1>
+            <div class="divider"></div>
+
+            <p class="txt">
+                Hi, and welcome to my portfolio! I’m a 19-year-old engineering student pursuing a Bachelor’s
+                degree in Information Science and Engineering at Jain University, Bangalore. My love for
+                programming and coding began in school, and what started as a hobby quickly grew into a
+                passion that drives me every day.
+            </p>
+
+            <p class="txt">
+                Over the years, I’ve developed a deep interest in web and app development.
+                This portfolio is a reflection of my journey so far—it’s where I share the projects
+                I’ve worked on, the skills I’ve picked up, and the ideas I’ve brought to life.
+                Each project represents something I’ve learned and the joy of solving real-world problems
+                through code.
+            </p>
+
+            <p class="txt">
+                I’m ambitious and constantly motivated by big dreams. I love setting goals and working
+                hard to achieve them, but what excites me the most is the process of learning and growing
+                along the way. I’m also a people person at heart—I enjoy connecting with others who share
+                similar passions and exchanging ideas that spark creativity and innovation. Feel free to explore my
+                work,
+                get a glimpse of what I’m passionate about,
+                and reach out if something resonates with you. Whether it’s collaborating on a project,
+                discussing ideas, or just sharing thoughts on tech, I’d love to connect!
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Mohammed Taha | All Rights Reserved</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:taha@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Developer', 'Artist', 'Jack of all Trades','Perfectionist'],
+            typeSpeed: 70,
+        });
+    </script>
+
+</html>

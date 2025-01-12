@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../header_footer.css" />
+    
+    <style>
+        /* General Section Styling */
+.projects-section {
+    padding: 50px 20px;
+    background-color: rgb(11, 11, 29);
+
+    color: aliceblue;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: rgb(126, 217, 217);
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: rgb(40, 40, 70);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Project Image */
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Project Content */
+.project-content {
+    padding: 20px;
+}
+
+.project-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: rgb(126, 217, 217);
+}
+
+.project-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.project-link {
+    display: inline-block;
+    color: rgb(126, 217, 217);
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid rgb(126, 217, 217);
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-link:hover {
+    background-color: rgb(126, 217, 217);
+    color: rgb(30, 30, 52);
+}
+
+        
+    </style>
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="he">
+            <div class="left">Taha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./skills.html">Skills</a></li>
+                    <li><a class="skl" href="./projects.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="projects-section">
+        <h1 class="projects-title">My Projects</h1>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="../assets/a1.png" alt="Project 1 Screenshot" class="project-image">
+                <div class="project-content">
+                    <h2>Project 1: Portfolio Website</h2>
+                    <p>A personal portfolio website designed and developed using HTML, CSS, and JavaScript. This project showcases my skills, projects, and background with a responsive and user-friendly design.</p>
+                    <a href="https://github.com/your-username/project1" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="../assets/a1.png" alt="Project 2 Screenshot" class="project-image">
+                <div class="project-content">
+                    <h2>Project 2: Expense Tracker</h2>
+                    <p>A web-based application built using Python and Flask for tracking daily expenses. Features include user authentication, dynamic graphs, and detailed expense categorization.</p>
+                    <a href="https://github.com/your-username/project2" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+    <h1 class="projects-title" style="font-size: 2rem; margin-top:60px;">Currently Working On</h1>
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="../assets/a1.png" alt="Project 1 Screenshot" class="project-image">
+            <div class="project-content">
+                <h2>Project 1: Portfolio Website</h2>
+                <p>A personal portfolio website designed and developed using HTML, CSS, and JavaScript. This project showcases my skills, projects, and background with a responsive and user-friendly design.</p>
+               
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="../assets/a1.png" alt="Project 2 Screenshot" class="project-image">
+            <div class="project-content">
+                <h2>Project 2: Expense Tracker</h2>
+                <p>A web-based application built using Python and Flask for tracking daily expenses. Features include user authentication, dynamic graphs, and detailed expense categorization.</p>
+               
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Mohammed Taha | All Rights Reserved</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:taha@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
